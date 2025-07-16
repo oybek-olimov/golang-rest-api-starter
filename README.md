@@ -29,7 +29,7 @@ project/
 
 - **Go 1.24.4**
 - **PostgreSQL**
-- **Chi** – marshrutlash (routing)
+- **Chi** – Framework
 - **Docker** va **Docker Compose**
 - **JWT (JSON Web Token)** – foydalanuvchi autentifikatsiyasi
 
