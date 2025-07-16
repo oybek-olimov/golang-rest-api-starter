@@ -1,13 +1,3 @@
-# Go CRUD API (User, Post, Comment)
-
-Bu loyiha Go dasturlash tilida yozilgan RESTful CRUD API bo‘lib, unda:
-- `user`, `post`, `comment` entitylari
-- `JWT token` asosida autentifikatsiya
-- `PostgreSQL` ma'lumotlar bazasi
-- `Docker + docker-compose`
-- `Chi` routing framework ishlatilgan.
-
----
 
 ##  Loyihaning tuzilishi
 
