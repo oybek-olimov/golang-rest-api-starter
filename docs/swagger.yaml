@@ -1,0 +1,9 @@
+basePath: /
+host: localhost:8000
+info:
+  contact: {}
+  description: This is a CRUD API with User, Post, Comment functionality.
+  title: Go CRUD API
+  version: "1.0"
+paths: {}
+swagger: "2.0"
