@@ -8,7 +8,7 @@ project/
 ├── config/                   # konfiguratsiyalar
 │   └── config.go
 ├── internal/
-│   ├── handler/              # HTTP handlerlar (Auth, User, Post, Comment)
+│   ├── handler/              # HTTP handlerlar
 │   ├── service/              # Biznes logika (Service layer)
 │   ├── store/                # Ma'lumotlar bazasi (Repository layer)
 │   │   └── postgres/
