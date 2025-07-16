@@ -27,7 +27,7 @@ project/
 
 ##  Texnologiyalar
 
-- **Go 1.22+**
+- **Go 1.24.4**
 - **PostgreSQL**
 - **Chi** – marshrutlash (routing)
 - **Docker** va **Docker Compose**
