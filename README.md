@@ -25,13 +25,13 @@ project/
 
 ---
 
-##  Texnologiyalar
+##  Technologies
 
 - **Go 1.24.4**
 - **PostgreSQL**
-- **Chi** – Framework
-- **Docker** va **Docker Compose**
-- **JWT (JSON Web Token)** – foydalanuvchi autentifikatsiyasi
+- **Chi Framework**
+- **Docker** & **Docker Compose**
+- **JWT (JSON Web Token)**
 
 ---
 
