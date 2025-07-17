@@ -46,10 +46,10 @@ func main() {
 	}
 	defer db.Close()
 
-	// 🔐 JWT Manager
+	//  JWT Manager
 	jwtManager := jwt.NewManager(cfg.JWTSecret, time.Minute*time.Duration(cfg.TokenDurationMinute))
 
-	// 🔧 Store/service/handler init
+	//  Store/service/handler init
 	userStore := postgres.NewUserStore(db)
 	userService := service.NewUserService(userStore, hash.NewHasher())
 	authHandler := handler.NewAuthHandler(userService, jwtManager)
@@ -62,14 +62,14 @@ func main() {
 	commentService := service.NewCommentService(commentStore)
 	commentHandler := handler.NewCommentHandler(commentService, jwtManager)
 
-	// 🛣 Router
+	//  Router
 	r := chi.NewRouter()
 	routes.RegisterRoutes(r, authHandler, postHandler, commentHandler, jwtManager)
 
 	r.Get("/swagger/*", httpSwagger.WrapHandler)
 
-	// 🚀 Serverni ishga tushirish
-	fmt.Printf("🚀 Server running at http://localhost:%s\n", cfg.AppPort)
+	//  Serverni ishga tushirish
+	fmt.Printf(" Server running at http://localhost:%s\n", cfg.AppPort)
 	if err := http.ListenAndServe(":"+cfg.AppPort, r); err != nil {
 		log.Fatalf("Server xatosi: %v", err)
 	}

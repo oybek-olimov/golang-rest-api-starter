@@ -30,7 +30,7 @@ package service_test
 // 	return user, nil
 // }
 
-// // 🔐 Dummy hasher (interfeysga mos)
+// //  Dummy hasher (interfeysga mos)
 // type dummyHasher struct{}
 
 // func (d *dummyHasher) Hash(password string) (string, error) {
@@ -41,7 +41,7 @@ package service_test
 // 	return hash == "hashed:"+password
 // }
 
-// // ✅ Test 1: Foydalanuvchi muvaffaqiyatli ro‘yxatdan o‘tadi
+// //  Test 1: Foydalanuvchi muvaffaqiyatli ro‘yxatdan o‘tadi
 // func TestRegister_Success(t *testing.T) {
 // 	store := &fakeUserStore{users: make(map[string]*model.User)}
 // 	hasher := &dummyHasher{}
@@ -61,7 +61,7 @@ package service_test
 // 	}
 // }
 
-// // ✅ Test 2: Foydalanuvchi allaqachon mavjud bo‘lsa
+// //  Test 2: Foydalanuvchi allaqachon mavjud bo‘lsa
 // func TestRegister_UserAlreadyExists(t *testing.T) {
 // 	store := &fakeUserStore{
 // 		users: map[string]*model.User{

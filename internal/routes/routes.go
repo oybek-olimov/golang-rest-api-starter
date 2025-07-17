@@ -20,7 +20,7 @@ func RegisterRoutes(r chi.Router, authHandler *handler.AuthHandler, postHandler 
 		// comment routelar
 		commentHandler.RegisterRoutes(r)
 
-		// 🔐 Himoyalangan route
+		// Himoyalangan route
 		r.Group(func(r chi.Router) {
 			r.Use(jwtManager.Middleware)
 
